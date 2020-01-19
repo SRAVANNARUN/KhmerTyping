@@ -23,7 +23,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 
@@ -490,12 +489,6 @@ public class MainFormController implements Initializable {
                 || event.getCode() == KeyCode.UP || event.getCode() == KeyCode.DOWN) {
             event.consume();
         }
-    }
-
-    @FXML
-    private void clickLesson(MouseEvent event) {
-        txtFront.requestFocus();
-
     }
 
 }

@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="775.0" prefWidth="983.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="khmerunicodetypingse.MainFormController">
+   <children>
+      <BorderPane StackPane.alignment="CENTER">
+         <bottom>
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="535.0" prefWidth="983.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="328.0" prefWidth="983.0" style="-fx-background-radius: 30;">
+                     <children>
+                        <StackPane layoutY="77.0" prefHeight="262.0" prefWidth="983.0">
+                           <children>
+                              <TextArea fx:id="txtBack" mouseTransparent="true" onKeyPressed="#keyPress" style="-fx-background-insets: 0;" stylesheets="@style.css" wrapText="true">
+                                 <font>
+                                    <Font name="Khmer OS Fasthand" size="15.0" />
+                                 </font>
+                              </TextArea>
+                              <TextArea fx:id="txtFront" editable="false" layoutX="10.0" layoutY="10.0" mouseTransparent="true" opacity="0.5" style="-fx-background-insets: 0;" wrapText="true">
+                                 <font>
+                                    <Font name="Khmer OS Fasthand" size="15.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </StackPane>
+                        <HBox alignment="CENTER" layoutX="656.0" layoutY="349.0" prefHeight="25.0" prefWidth="327.0" style="-fx-background-color: orange; -fx-background-radius: 20;">
+                           <children>
+                              <Label text="សុក្រិតភាព  ៖ " textFill="WHITE">
+                                 <font>
+                                    <Font name="Nokora Regular" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="100%" textFill="WHITE">
+                                 <font>
+                                    <Font name="Nokora Regular" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="5.0" />
+                              <Label text="បានបញ្ចប់ ៖​​ " textFill="WHITE">
+                                 <font>
+                                    <Font name="Nokora Regular" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="100%" textFill="WHITE">
+                                 <font>
+                                    <Font name="Nokora Regular" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Separator layoutX="134.0" layoutY="10.0" orientation="VERTICAL" prefHeight="5.0" />
+                              <Label text="កំហុស ៖ " textFill="WHITE">
+                                 <font>
+                                    <Font name="Nokora Regular" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="100%" textFill="WHITE">
+                                 <font>
+                                    <Font name="Nokora Regular" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" layoutY="30.0" prefHeight="40.0" prefWidth="983.0" style="-fx-background-color: teal;">
+                           <children>
+                              <Label alignment="CENTER" text="សូមវាយ ៖ " textFill="WHITE">
+                                 <font>
+                                    <Font name="Khmer OS Fasthand" size="20.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label fx:id="lblTodo" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" text="កម្ពុជា" textFill="WHITE">
+                                 <font>
+                                    <Font name="Khmer OS Fasthand" size="20.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <JFXSlider blockIncrement="1.0" layoutX="-1.0" layoutY="354.0" majorTickUnit="10.0" max="200.0" prefHeight="14.0" prefWidth="632.0" showTickLabels="true" />
+                     </children>
+                  </AnchorPane>
+                  <HBox spacing="20.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="-10.0" />
+                     </VBox.margin>
+                     <children>
+                        <AnchorPane fx:id="bgKey" opacity="0.9" style="-fx-background-radius: 10; -fx-border-color: TRANSPARENT;">
+                           <children>
+                              <GridPane alignment="CENTER" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="`" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="»" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="«" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="55.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="16.0" layoutY="17.0" text="1" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="42.0" layoutY="-17.0" text="!" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="41.0" layoutY="9.0" text="១" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btn2" alignment="CENTER" layoutX="110.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="\@" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="2" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ៗ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="២" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="165.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="៑" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="3" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="&quot;" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="៣" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="220.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="\$" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="4" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="៛" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="៤" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="275.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="€" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="5" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="\%" textFill="#4d4d4d" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="៥" textFill="#4d4d4d" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btn6" alignment="CENTER" layoutX="330.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="៙" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="6" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="៍" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="៦" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btn7" alignment="CENTER" layoutX="385.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="៚" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="7" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="័" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="៧" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btn8" alignment="CENTER" layoutX="440.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="*" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="8" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="៏" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="៨" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="495.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="{" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="9" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="(" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="៩" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="550.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="}" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="0" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text=")" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="០" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnMinus" alignment="CENTER" layoutX="605.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="×" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="-" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="៌" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ឥ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnEual" alignment="CENTER" layoutX="660.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="៎" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="=" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="=" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ឲ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="715.0" prefHeight="53.0" prefWidth="100.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="43.0" minWidth="10.0" prefWidth="33.0" />
+                                    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="66.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="backdpace" textFill="TEAL" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="លុប" textFill="#4d4d4d" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="TEAL" glyphName="LONG_ARROW_LEFT" size="25" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnTab" alignment="CENTER" layoutY="59.0" prefHeight="53.0" prefWidth="81.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="tab" textFill="TEAL">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ចេប" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="TEAL" glyphName="EXCHANGE" size="25" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnQ" alignment="CENTER" layoutX="87.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="q" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឈ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ឆ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnW" alignment="CENTER" layoutX="142.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="w" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឺ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ឹ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnE" alignment="CENTER" layoutX="197.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="ឯ" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="e" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ែ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="េ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnR" alignment="CENTER" layoutX="252.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="ឫ" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="r" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឬ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="រ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnT" alignment="CENTER" layoutX="307.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="t" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ទ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ត" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnY" alignment="CENTER" layoutX="362.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10; -fx-border-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="y" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ួ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="យ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnU" alignment="CENTER" layoutX="417.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="u" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ូ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ុ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnI" alignment="CENTER" layoutX="472.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="ឦ" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="i" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ី" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ិ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnO" alignment="CENTER" layoutX="527.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="ឱ" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="o" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ៅ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ោ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnP" alignment="CENTER" layoutX="582.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="ឰ" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="p" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ភ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ផ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnLeftBrac" alignment="CENTER" layoutX="637.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="ឩ" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="[" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឿ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ៀ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnRightBrac" alignment="CENTER" layoutX="692.0" layoutY="59.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="ឳ" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="]" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឧ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ឪ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnBackSlash" alignment="CENTER" layoutX="747.0" layoutY="59.0" prefHeight="53.0" prefWidth="68.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="\\" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="\\" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឭ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ឮ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutY="118.0" prefHeight="53.0" prefWidth="105.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="68.0" minWidth="10.0" prefWidth="68.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="47.0" minWidth="10.0" prefWidth="36.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="caps lock" textFill="TEAL">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ប្ដូរជាប់" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnA" alignment="CENTER" layoutX="111.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="25.0" minWidth="10.0" prefWidth="17.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="36.0" minWidth="10.0" prefWidth="33.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="a" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" prefHeight="35.0" prefWidth="37.0" text=" ាំ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ា" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnS" alignment="CENTER" layoutX="166.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="s" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ៃ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ស" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnD" alignment="CENTER" layoutX="221.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="d" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឌ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ដ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnF" alignment="CENTER" layoutX="276.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="f" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ធ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ថ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnG" alignment="CENTER" layoutX="331.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="g" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="អ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ង" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnH" alignment="CENTER" layoutX="386.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="h" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ះ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ហ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnJ" alignment="CENTER" layoutX="441.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="j" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ញ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="្" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnK" alignment="CENTER" layoutX="496.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="k" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="គ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ក" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnL" alignment="CENTER" layoutX="551.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="l" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឡ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ល" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnSimicol" alignment="CENTER" layoutX="606.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="20.0" minWidth="10.0" prefWidth="18.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="32.0" minWidth="10.0" prefWidth="32.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="៖" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text=";" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" prefWidth="34.0" text="ោះ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ើ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnSingleQuote" alignment="CENTER" layoutX="661.0" layoutY="118.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="ៈ" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="'" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="៉" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="់" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnEnter" alignment="CENTER" layoutX="716.0" layoutY="118.0" prefHeight="53.0" prefWidth="99.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="enter" textFill="TEAL" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="បញ្ចូល" textFill="#4d4d4d" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="TEAL" glyphName="LEVEL_DOWN" rotate="90.0" size="25" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnLeftShift" alignment="CENTER" layoutY="177.0" prefHeight="53.0" prefWidth="131.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="shift" textFill="TEAL">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ប្ដូរ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnZ" alignment="CENTER" layoutX="137.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="z" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឍ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ឋ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnX" alignment="CENTER" layoutX="192.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="x" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ឃ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ខ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnC" alignment="CENTER" layoutX="247.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="c" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ជ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ច" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnV" alignment="CENTER" layoutX="302.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="20.0" minWidth="10.0" prefWidth="14.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="36.0" minWidth="10.0" prefWidth="36.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="v" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text=" េះ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="វ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnB" alignment="CENTER" layoutX="357.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="b" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ព" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ប" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnN" alignment="CENTER" layoutX="412.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="n" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ណ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ន" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnM" alignment="CENTER" layoutX="467.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="m" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ំ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ម" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnComma" alignment="CENTER" layoutX="522.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="20.0" minWidth="10.0" prefWidth="17.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="35.0" minWidth="10.0" prefWidth="33.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="," textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="," textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text=" ុះ" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ុំ" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnPeriod" alignment="CENTER" layoutX="577.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="." textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="." textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="៕" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="។" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnForwardSlash" alignment="CENTER" layoutX="632.0" layoutY="177.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="/" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="35.0" layoutY="14.0" text="/" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="?" textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="៊" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnRightShift" alignment="CENTER" layoutX="687.0" layoutY="177.0" prefHeight="53.0" prefWidth="128.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="shift" textFill="TEAL" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ប្ដូរ" textFill="#4d4d4d" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnLeftAlt" alignment="CENTER" layoutX="192.0" layoutY="236.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="alt" textFill="TEAL">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ជំនួស" textFill="#4d4d4d" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="137.0" layoutY="236.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <FontAwesomeIconView fill="TEAL" glyphName="WINDOWS" size="25" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnSpace" alignment="CENTER" layoutX="247.0" layoutY="236.0" prefHeight="53.0" prefWidth="325.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="  space" textFill="TEAL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="5.0" text="ដកឃ្លា  " textFill="#4d4d4d" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ចន្លោះមើលមិនឃើញ  " textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="  ចន្លោះភ្ជាប់" textFill="#4d4d4d">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="btnRightAlt" alignment="CENTER" layoutX="577.0" layoutY="236.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="41.0" minWidth="10.0" prefWidth="41.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="alt gr" textFill="TEAL">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ឆ្លាស់" textFill="#4d4d4d" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutY="236.0" prefHeight="53.0" prefWidth="76.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="ctrl" textFill="TEAL">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="បញ្ជា" textFill="#4d4d4d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="82.0" layoutY="236.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="fn" textFill="TEAL">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="687.0" layoutY="236.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <FontAwesomeIconView fill="TEAL" glyphName="LIST_ALT" size="25" />
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="632.0" layoutY="236.0" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="fn" textFill="TEAL">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane alignment="CENTER" layoutX="742.0" layoutY="236.0" prefHeight="53.0" prefWidth="73.0" style="-fx-background-color: #f9f9f9ff; -fx-background-radius: 10;">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="35.0" layoutY="14.0" text="ctrl" textFill="TEAL" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Ubuntu Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="បញ្ជា" textFill="#4d4d4d" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="NiDA Bayon" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                           <padding>
+                              <Insets right="-1.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow color="#b5b5b5" spread="0.23" />
+                           </effect>
+                        </AnchorPane>
+                        <VBox prefHeight="291.0" prefWidth="143.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="60.0" prefWidth="99.0">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@LEFTHAND.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow color="#828282" spread="0.28" />
+                                       </effect>
+                                    </ImageView>
+                                    <ImageView fitHeight="60.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@HAND.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow color="#828282" spread="0.28" />
+                                       </effect>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <GridPane alignment="CENTER" prefHeight="226.0" style="-fx-background-color: TEAL; -fx-background-radius: 30;">
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <JFXButton alignment="TOP_LEFT" graphicTextGap="8.0" onMouseClicked="#clickLesson" prefWidth="127.0" style="-fx-background-radius: 20;" text="មេរៀនទី" textFill="WHITE">
+                                       <font>
+                                          <Font name="Nokora Regular" size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="BOOKMARK" size="20" />
+                                       </graphic>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </JFXButton>
+                                    <JFXButton alignment="TOP_LEFT" graphicTextGap="8.0" layoutX="10.0" layoutY="24.0" prefWidth="127.0" style="-fx-background-radius: 20;" text="មេរៀនមុន" textFill="WHITE" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Nokora Regular" size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#00ffe5" glyphName="PLAY" rotate="180.0" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="TOP_LEFT" graphicTextGap="8.0" layoutX="10.0" layoutY="56.0" prefHeight="40.0" prefWidth="135.0" style="-fx-background-radius: 20;" text="មេរៀនបន្ទាប់" textFill="WHITE" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Nokora Regular" size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#ff850d" glyphName="PLAY" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="TOP_LEFT" graphicTextGap="8.0" layoutX="10.0" layoutY="100.0" prefWidth="127.0" style="-fx-background-radius: 20;" text="លេងម្ដងទៀត" textFill="WHITE" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Nokora Regular" size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#edff00" glyphName="REPEAT" size="20" />
+                                       </graphic>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                    </JFXButton>
+                                    <JFXButton alignment="TOP_LEFT" graphicTextGap="8.0" layoutX="22.0" layoutY="235.0" prefWidth="127.0" style="-fx-background-radius: 20;" text="អំពីអ្នកបង្កើត" textFill="WHITE" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Nokora Regular" size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#ffd5d5" glyphName="INFO" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <effect>
+                                    <DropShadow color="#727070" height="15.0" offsetY="2.0" radius="7.0" spread="0.1" width="15.0" />
+                                 </effect>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>
